@@ -1,47 +1,49 @@
-.rodape{
+.rodape {
     color: #fff;
     text-align: left;
+
     /* padding: 15px; */
-    .logo{
+    .logo {
         padding-bottom: 20px;
     }
-    &__linha-1{
+
+    &__linha-1 {
         background-color: #272525;
         background-image: url('../todas-as-img/img/rodape-bg.jpg');
-        background-size: cover;   
+        background-size: cover;
         padding: 15px;
     }
-    
-    &__linha-2{
+
+    &__linha-2 {
         background-color: #000;
         text-align: center;
         padding: 15px;
     }
-    
-    &__coluna{
+
+    &__coluna {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    
-    &__titulo{
+
+    &__titulo {
         border-bottom: 1px solid #fff;
         padding: 0 10px 10px 10px;
         font-size: 18px;
     }
-    
-    &__lista-links{
+
+    &__lista-links {
         padding: 0;
         list-style: none;
     }
-    
-    &__lista-links__item{
+
+    &__lista-links__item {
         color: #fff;
         text-decoration: none;
         margin-bottom: 10px;
         display: block;
     }
-    
-    &__lista-links__item::before{
+
+    &__lista-links__item::before {
         content: '>';
         margin-right: 8px;
         color: $cor-principal;

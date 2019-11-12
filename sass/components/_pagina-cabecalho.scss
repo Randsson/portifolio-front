@@ -1,14 +1,16 @@
-.pagina-cabecalho{
+.pagina-cabecalho {
     background-color: $cor-principal;
     color: #fff;
     padding-top: 140px;
     padding-bottom: 30px;
     background-attachment: fixed;
-    &__titulo{
+
+    &__titulo {
         text-align: center;
         text-transform: uppercase;
     }
-    &__titulo::after{
+
+    &__titulo::after {
         content: '';
         display: block;
         width: 50px;
