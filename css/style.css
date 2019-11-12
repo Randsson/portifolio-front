@@ -582,15 +582,34 @@ body {
     margin-bottom: 0; }
   .cabecalho-home__role {
     display: none; }
-  @media (min-width: 992px) {
-    .cabecalho-home {
-      height: 100vh; } }
   @media (min-width: 768px) {
     .cabecalho-home {
-      background-image: url("/todas-as-img/img/cabecalho-home-bg-md.jpg"); } }
+      background-image: url("../todas-as-img/img/cabecalho-home-bg-md.jpg"); } }
+  @media (min-width: 992px) {
+    .cabecalho-home {
+      height: 100vh; }
+      .cabecalho-home__titulo {
+        font-size: 60px;
+        margin-top: 250px; }
+      .cabecalho-home__subtitulo {
+        font-size: 22px; }
+      .cabecalho-home__role {
+        display: block;
+        position: absolute;
+        background: url("../todas-as-img/img/icone-mouse.png") no-repeat center right;
+        color: #fff;
+        bottom: 10px;
+        left: 50%;
+        height: 50px;
+        width: 190px;
+        font-size: 20px;
+        text-align: left;
+        line-height: 40px;
+        text-decoration: none;
+        margin-left: -95px; } }
   @media (min-width: 1200px) {
     .cabecalho-home {
-      background-image: url("/todas-as-img/img/cabecalho-home-bg-xl.jpg"); } }
+      background-image: url("../todas-as-img/img/cabecalho-home-bg-xl.jpg"); } }
 
 .home__titulo {
   text-align: center;

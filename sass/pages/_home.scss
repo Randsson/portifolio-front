@@ -15,16 +15,42 @@
 		display: none;
 	}
 
+	@media(min-width: $breakpoint-md) {
+		background-image: url('../todas-as-img/img/cabecalho-home-bg-md.jpg');
+	}
+
 	@media(min-width: $breakpoint-lg) {
 		height: 100vh;
+
+		&__titulo {
+			font-size: 60px;
+			margin-top: 250px;
+		}
+
+		&__subtitulo {
+
+			font-size: 22px;
+		}
+
+		&__role {
+			display: block;
+			position: absolute;
+			background: url("../todas-as-img/img/icone-mouse.png") no-repeat center right;
+			color: #fff;
+			bottom: 10px;
+			left: 50%;
+			height: 50px;
+			width: 190px;
+			font-size: 20px;
+			text-align: left;
+			line-height: 40px;
+			text-decoration: none;
+			margin-left: -95px;
+		}
 	}
 
-	@media(min-width: $breakpoint-md){
-		background-image: url('/todas-as-img/img/cabecalho-home-bg-md.jpg');
-	}
-
-	@media(min-width: $breakpoint-xl){
-		background-image: url('/todas-as-img/img/cabecalho-home-bg-xl.jpg');
+	@media(min-width: $breakpoint-xl) {
+		background-image: url('../todas-as-img/img/cabecalho-home-bg-xl.jpg');
 	}
 }
 
