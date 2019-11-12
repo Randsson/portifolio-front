@@ -499,7 +499,8 @@ body {
 
 .menu-principal__lista {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  transition: margin 200ms ease-out; }
   @media (min-width: 768px) {
     .menu-principal__lista li {
       display: inline-block;
@@ -511,7 +512,9 @@ body {
   color: #3a3535;
   margin-bottom: 10px;
   display: block;
-  font-size: 18px; }
+  font-size: 18px;
+  height: 20px;
+  transition: all 200ms ease-out; }
 
 .menu-principal__item--atual {
   color: #f44242; }
