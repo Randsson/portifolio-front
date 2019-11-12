@@ -585,6 +585,12 @@ body {
   @media (min-width: 992px) {
     .cabecalho-home {
       height: 100vh; } }
+  @media (min-width: 768px) {
+    .cabecalho-home {
+      background-image: url("/todas-as-img/img/cabecalho-home-bg-md.jpg"); } }
+  @media (min-width: 1200px) {
+    .cabecalho-home {
+      background-image: url("/todas-as-img/img/cabecalho-home-bg-xl.jpg"); } }
 
 .home__titulo {
   text-align: center;

@@ -18,6 +18,14 @@
 	@media(min-width: $breakpoint-lg) {
 		height: 100vh;
 	}
+
+	@media(min-width: $breakpoint-md){
+		background-image: url('/todas-as-img/img/cabecalho-home-bg-md.jpg');
+	}
+
+	@media(min-width: $breakpoint-xl){
+		background-image: url('/todas-as-img/img/cabecalho-home-bg-xl.jpg');
+	}
 }
 
 .home__titulo {
