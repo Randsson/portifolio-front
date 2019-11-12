@@ -1,20 +1,24 @@
-.cabecalho{
-    background: rgb(255, 255, 255);
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    @media(min-width: $breakpoint-md){
-        min-height: 100px;
-        .logo{
-            float: left;
-            margin-top: 10px;
-        }
-        .menu-principal{
-            float: right;
-            margin-top: 12px;
-            &__lista{
-                margin-bottom: 0;
-            }
-        }
-    }
+.cabecalho {
+	background: rgb(255, 255, 255);
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+
+	@media(min-width: $breakpoint-md) {
+		min-height: 100px;
+
+		.logo {
+			float: left;
+			margin-top: 10px;
+		}
+
+		.menu-principal {
+			float: right;
+			margin-top: 12px;
+
+			&__lista {
+				margin-bottom: 0;
+			}
+		}
+	}
 }

@@ -512,17 +512,19 @@ body {
   margin-bottom: 10px;
   display: block;
   font-size: 18px; }
-  .menu-principal__item--atual {
-    color: #f44242; }
-  @media (max-width: 768px) {
-    .menu-principal__item--fechado .menu-principal__btn {
-      background-position: 5px 5px; }
-    .menu-principal__item--fechado .menu-principal__lista {
-      margin: 0; }
-    .menu-principal__item--fechado .menu-principal__item {
-      margin: 0;
-      height: 0;
-      overflow: hidden; } }
+
+.menu-principal__item--atual {
+  color: #f44242; }
+
+@media (max-width: 768px) {
+  .menu-principal--fechado .menu-principal__btn {
+    background-position: 5px 5px; }
+  .menu-principal--fechado .menu-principal__lista {
+    margin: 0; }
+  .menu-principal--fechado .menu-principal__item {
+    margin: 0;
+    height: 0;
+    overflow: hidden; } }
 
 .pagina-cabecalho {
   background-color: #f44242;
