@@ -4,8 +4,8 @@
 
     &__item {
         text-align: center;
-        padding: 0 15px;
         margin-bottom: 50px;
+        padding: 0 15px;
 
         @media(min-width: $breakpoint-md) {
             float: left;
