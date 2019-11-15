@@ -1,8 +1,10 @@
 .formulario {
     background-color: #efecec;
     margin-right: -15px;
+    margin-left: -15px; 
     padding: 40px 15px 40px 15px;
     box-shadow: 0 3px 5px #989898;
+    margin: 30 0px;
 
     &__grupo {
         margin-bottom: 15px;
@@ -29,5 +31,27 @@
         display: block;
         margin: 0 auto;
         font-weight: bold;
+    }
+    @media(min-width: $breakpoint-md){
+        padding-bottom: 0;
+        &__grupo{
+            float: left;
+            width: 100%;
+
+        }
+        &__grupo--coluna-esq{
+            width: 50%;
+            padding-right: 15px;
+        }
+        
+        &__grupo--coluna-dir{
+            width: 50%;
+            padding-left: 15px;
+        }
+
+        &__botao{
+            font-size: 20px;
+            transform: translateY(-37px);
+        }
     }
 }
