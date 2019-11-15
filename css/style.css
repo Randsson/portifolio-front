@@ -349,7 +349,8 @@ body {
   background: white;
   padding: 15px 0;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
   @media (min-width: 768px) {
     .cabecalho {
       min-height: 100px; }
@@ -410,6 +411,15 @@ body {
 
 .text-center {
   text-align: center; }
+
+.img-left {
+  float: left; }
+
+@media (min-width: 768px) {
+  .img-left-md {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px; } }
 
 .depoimentos {
   background-color: #f44242;
@@ -497,6 +507,15 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
+  @media (min-width: 450px) {
+    .mapa {
+      padding-bottom: 60%; } }
+  @media (min-width: 768px) {
+    .mapa {
+      padding-bottom: 40%; } }
+  @media (min-width: 992px) {
+    .mapa {
+      padding-bottom: 25%; } }
 
 .menu-principal__btn {
   display: block;
@@ -569,13 +588,18 @@ body {
     margin-top: 20px; }
 
 .pagina-conteudo {
-  padding: 15px;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  overflow: auto; }
   .pagina-conteudo p {
     color: #3a3a3a;
     line-height: 22px;
+    margin-top: 20px;
     margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .pagina-conteudo {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
 
 .servicos {
   padding: 30px 0;
@@ -662,3 +686,8 @@ body {
     margin-left: 15px;
     border-left: 1px solid #000;
     padding-left: 10px; }
+
+@media (min-width: 768px) {
+  .pagina-sobre .pagina-conteudo {
+    padding-right: 150px;
+    padding-left: 150px; } }
