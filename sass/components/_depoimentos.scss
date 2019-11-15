@@ -6,6 +6,8 @@
 
     &__item {
         padding: 0 15px;
+        max-width: 750px;
+        margin: 0 auto;
     }
 
     &__img {
@@ -33,5 +35,19 @@
         width: 25px;
         height: 23px;
         margin-right: 5px;
+    }
+
+    @media(min-width: $breakpoint-md){
+        
+        padding: 150px;
+
+        &__img{
+            float: left;
+            margin-right: 15px;
+        }
+
+        &__pessoa{
+            text-align: left;
+        }
     }
 }
