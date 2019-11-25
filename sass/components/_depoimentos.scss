@@ -4,8 +4,7 @@
     color: #fff;
     padding: 30px 0;
 
-    &__item {
-        padding: 0 15px;
+    &__caixa {
         max-width: 750px;
         margin: 0 auto;
     }
@@ -37,16 +36,16 @@
         margin-right: 5px;
     }
 
-    @media(min-width: $breakpoint-md){
-        
+    @media(min-width: $breakpoint-md) {
+
         padding: 150px;
 
-        &__img{
+        &__img {
             float: left;
             margin-right: 15px;
         }
 
-        &__pessoa{
+        &__pessoa {
             text-align: left;
         }
     }
