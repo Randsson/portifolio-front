@@ -465,7 +465,7 @@ body {
   margin-left: -15px;
   padding: 40px 15px 40px 15px;
   box-shadow: 0 3px 5px #989898;
-  margin: 30 0px; }
+  margin: 80 0px; }
   .formulario__grupo {
     margin-bottom: 15px; }
   .formulario__campo {
@@ -485,6 +485,10 @@ body {
     display: block;
     margin: 0 auto;
     font-weight: bold; }
+  .formulario label.error {
+    border-left: 4px solid #f44242;
+    padding-left: 4px;
+    color: #f44242; }
   @media (min-width: 768px) {
     .formulario {
       padding-bottom: 0; }

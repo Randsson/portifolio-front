@@ -4,7 +4,7 @@
     margin-left: -15px; 
     padding: 40px 15px 40px 15px;
     box-shadow: 0 3px 5px #989898;
-    margin: 30 0px;
+    margin: 80 0px;
 
     &__grupo {
         margin-bottom: 15px;
@@ -31,6 +31,12 @@
         display: block;
         margin: 0 auto;
         font-weight: bold;
+    }
+    label.error{
+        border-left: 4px solid $cor-principal;
+        padding-left: 4px;
+        color: $cor-principal;
+
     }
     @media(min-width: $breakpoint-md){
         padding-bottom: 0;
