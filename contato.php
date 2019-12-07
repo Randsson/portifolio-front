@@ -1,4 +1,8 @@
-<?php include('partes/cabecalho.php') ?>
+<?php 
+    global $tituloPagina;
+    $tituloPagina = "Contato";
+    include('partes/cabecalho.php');
+ ?>
         <header class="container pagina-cabecalho">
             <h1 class="pagina-cabecalho__titulo">Contato:</h1>
         </header>

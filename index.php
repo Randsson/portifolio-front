@@ -1,4 +1,9 @@
-<?php include('partes/cabecalho.php') ?>
+<?php 
+	global $tituloPagina;
+	$tituloPagina = "Home";
+	include('partes/cabecalho.php'); 
+
+?>
 		<header class="cabecalho-home">
 			<h2 class="cabecalho-home__titulo">Texto grande aqui!</h2>
 			<p class="cabecalho-home__subtitulo">texto menor aqui</p>
