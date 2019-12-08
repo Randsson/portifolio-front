@@ -14,12 +14,17 @@
 	?>
 	<title> <?php echo $titulo ?> </title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="todas-as-img/Graphicloads-Flat-Finance-Global.ico">
 </head>
 
 <body>
 	<header class="cabecalho">
 		<div class="container">
-			<a href="index.php" class="logo">Design Responsivo</a>
+			<?php if($tituloPagina == 'Home'): ?>
+				<h1 class="logo">Design Responsivo</h1>
+			<?php else: ?>
+				<a href="index.php" class="logo">Design Responsivo</a>
+			<?php endif; ?>
 			<nav class="menu-principal menu-principal--fechado">
 				<button class="menu-principal__btn menu-principal__btn--fechar">Abrir/Fechar menu</button>
 				<ul class="menu-principal__lista">
