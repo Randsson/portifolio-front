@@ -2,6 +2,32 @@
     global $tituloPagina;
     $tituloPagina = "Contato";
     include('partes/cabecalho.php');
+    $erroFormulario = '';
+    $sucessoFormulario = '';
+    
+    if( isset($_POST['submit']) ){
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $mensagem = $_POST['mensagem'];
+        if(
+            $nome != ''
+            && $email != ''
+            && $mensagem != '') {
+            $mensagemEmail = 'Nome: ' . $nome . ' - ';
+            $mensagemEmail .= 'Email: ' . $email . ' - ';
+            $mensagemEmail .= 'Mensagem: ' . $mensagem;
+                if(mail('randssondouglas@gmail.com', 'Mensagem de confirmação', $mensagemEmail) ){
+                    //email enviado
+                    $sucessoFormulario = "Mensagem enviada com sucesso!";
+                }
+                else{
+                    $erroFormulario = "Falha ao enviar a mensagem. Tente novamente em alguns instantes.";
+                }
+        }
+        else{
+            $erroFormulario = "Por favor verifique o preenchimento dos campos";
+        }
+    }
  ?>
         <header class="container pagina-cabecalho">
             <h1 class="pagina-cabecalho__titulo">Contato:</h1>
@@ -9,7 +35,13 @@
         <section class="container pagina-conteudo">
             <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequatur, nobis
                 tempora voluptate similique in. Corporis error rem ex dolor vitae quo, nihil.</p>
-            <form action="#" class="formulario">
+            <form action="contato.php" class="formulario" method="post">
+                <?php if($erroFormulario != ''): ?>
+                    <div class="formulario__erro">
+                        <?php echo $erroFormulario ?>
+                    </div>
+                <?php endif; ?>
+                
                 <div class="formulario__grupo formulario__grupo--coluna-esq">
                     <label class="formulario__label" for="nome">Nome</label><br>
                     <input class="formulario__campo" type="text" name="nome" id="nome"><br>
@@ -23,7 +55,7 @@
                     <textarea class="formulario__campo" name="mensagem" id="mensagem" cols="30"
                         rows="10"></textarea><br>
                 </div>
-                <input class="formulario__botao" type="submit" value="Enviar" id="enviar">
+                <input class="formulario__botao" type="submit" name="submit" value="Enviar" id="enviar">
             </form>
             <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, molestiae in. Quasi
                 et fugiat rem laboriosam <br>
