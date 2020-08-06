@@ -15,6 +15,7 @@
 	<title> <?php echo $titulo ?> </title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="todas-as-img/Graphicloads-Flat-Finance-Global.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
 <body>
